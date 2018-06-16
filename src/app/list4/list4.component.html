@@ -1,0 +1,7 @@
+<h1>This component loads its heroes using a resolve guard, and it scroll imperatively **after** the view initialization</h1>
+
+<p>Scroll to the end of the page, click on the detail of a hero and come back: the position **will** finally be restored.</p>
+
+<div *ngFor="let hero of heroes">
+  <a routerLink="/detail">{{ hero.id }} - {{ hero.name }}</a>
+</div>
